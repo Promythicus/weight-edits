@@ -1,0 +1,202 @@
+{
+ "pairs": 53,
+ "fit_pairs": 40,
+ "layers": [
+  {
+   "layer": 0,
+   "delta": 0.032,
+   "neurons": 89,
+   "l1": 1.636,
+   "hit_rate_held_out": 0.858,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 1,
+   "delta": 0.013,
+   "neurons": 30,
+   "l1": 0.277,
+   "hit_rate_held_out": 0.965,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 2,
+   "delta": 0.001,
+   "neurons": 13,
+   "l1": 0.011,
+   "hit_rate_held_out": 0.992,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 3,
+   "delta": 0.019,
+   "neurons": 67,
+   "l1": 0.615,
+   "hit_rate_held_out": 0.927,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 4,
+   "delta": 0.017,
+   "neurons": 52,
+   "l1": 0.379,
+   "hit_rate_held_out": 0.904,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 5,
+   "delta": 0.005,
+   "neurons": 71,
+   "l1": 0.173,
+   "hit_rate_held_out": 0.896,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 6,
+   "delta": 0.016,
+   "neurons": 2,
+   "l1": 0.046,
+   "hit_rate_held_out": 0.985,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 7,
+   "delta": 0.042,
+   "neurons": 87,
+   "l1": 1.494,
+   "hit_rate_held_out": 0.908,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 8,
+   "delta": 0.01,
+   "neurons": 82,
+   "l1": 0.422,
+   "hit_rate_held_out": 0.892,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 9,
+   "delta": 0.014,
+   "neurons": 63,
+   "l1": 0.496,
+   "hit_rate_held_out": 0.942,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 10,
+   "delta": 0.016,
+   "neurons": 43,
+   "l1": 0.425,
+   "hit_rate_held_out": 0.969,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 11,
+   "delta": 0.025,
+   "neurons": 27,
+   "l1": 0.361,
+   "hit_rate_held_out": 0.977,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 12,
+   "delta": 0.02,
+   "neurons": 29,
+   "l1": 0.268,
+   "hit_rate_held_out": 0.965,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 13,
+   "delta": 0.043,
+   "neurons": 11,
+   "l1": 0.23,
+   "hit_rate_held_out": 0.992,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 14,
+   "delta": 0.036,
+   "neurons": 43,
+   "l1": 0.273,
+   "hit_rate_held_out": 0.977,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 15,
+   "delta": 0.124,
+   "neurons": 7,
+   "l1": 0.272,
+   "hit_rate_held_out": 0.988,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 16,
+   "delta": 0.049,
+   "neurons": 13,
+   "l1": 0.179,
+   "hit_rate_held_out": 0.992,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 17,
+   "delta": 0.052,
+   "neurons": 44,
+   "l1": 0.381,
+   "hit_rate_held_out": 0.95,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 18,
+   "delta": 0.033,
+   "neurons": 35,
+   "l1": 0.19,
+   "hit_rate_held_out": 0.954,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 19,
+   "delta": 0.125,
+   "neurons": 2,
+   "l1": 0.083,
+   "hit_rate_held_out": 0.996,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 20,
+   "delta": 0.076,
+   "neurons": 20,
+   "l1": 0.215,
+   "hit_rate_held_out": 0.969,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 21,
+   "delta": 0.115,
+   "neurons": 3,
+   "l1": 0.104,
+   "hit_rate_held_out": 0.996,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 22,
+   "delta": 0.057,
+   "neurons": 3,
+   "l1": 0.038,
+   "hit_rate_held_out": 1.0,
+   "productive_disturbed_held_out": 0.0
+  },
+  {
+   "layer": 23,
+   "delta": 0.225,
+   "neurons": 17,
+   "l1": 0.248,
+   "hit_rate_held_out": 0.965,
+   "productive_disturbed_held_out": 0.0
+  }
+ ],
+ "chosen": [
+  22,
+  19
+ ]
+}

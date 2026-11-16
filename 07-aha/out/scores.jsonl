@@ -1,0 +1,15 @@
+{"tag": "practice-aha", "patch": "out/aha.patch.pt", "split": "train", "n": 128, "cap": 2048, "right": 0.0547, "hit_cap": 0.9375, "seconds": 217}
+{"tag": "test-aha", "patch": "out/aha.patch.pt", "split": "test", "n": 200, "cap": 2048, "right": 0.07, "hit_cap": 0.915, "seconds": 353}
+{"tag": "practice-aha-15-19", "patch": "out/aha-15-19.patch.pt", "split": "train", "n": 128, "cap": 2048, "right": 0.0703, "hit_cap": 0.9219, "seconds": 218}
+{"tag": "test-aha-15-19", "patch": "out/aha-15-19.patch.pt", "split": "test", "n": 200, "cap": 2048, "right": 0.065, "hit_cap": 0.93, "seconds": 354}
+{"tag": "practice-aha-15-19-x10", "patch": "out/aha-15-19-x10.patch.pt", "split": "train", "n": 128, "cap": 2048, "right": 0.0, "hit_cap": 0.9922, "seconds": 255}
+{"tag": "practice-aha-15-19-x30", "patch": "out/aha-15-19-x30.patch.pt", "split": "train", "n": 128, "cap": 2048, "right": 0.0, "hit_cap": 1.0, "seconds": 218}
+{"tag": "practice-aha-15-19-x100", "patch": "out/aha-15-19-x100.patch.pt", "split": "train", "n": 128, "cap": 2048, "right": 0.0, "hit_cap": 1.0, "seconds": 218}
+{"tag": "practice-aha-15-19-x300", "patch": "out/aha-15-19-x300.patch.pt", "split": "train", "n": 128, "cap": 2048, "right": 0.0, "hit_cap": 1.0, "seconds": 218}
+{"tag": "practice-aha-15-19-x1000", "patch": "out/aha-15-19-x1000.patch.pt", "split": "train", "n": 128, "cap": 2048, "right": 0.0, "hit_cap": 1.0, "seconds": 217}
+{"tag": "practice-aha-x10", "patch": "out/aha-x10.patch.pt", "split": "train", "n": 128, "cap": 2048, "right": 0.0234, "hit_cap": 0.9766, "seconds": 218}
+{"tag": "practice-aha-x30", "patch": "out/aha-x30.patch.pt", "split": "train", "n": 128, "cap": 2048, "right": 0.0, "hit_cap": 1.0, "seconds": 218}
+{"tag": "practice-aha-x100", "patch": "out/aha-x100.patch.pt", "split": "train", "n": 128, "cap": 2048, "right": 0.0, "hit_cap": 1.0, "seconds": 218}
+{"tag": "practice-aha-x300", "patch": "out/aha-x300.patch.pt", "split": "train", "n": 128, "cap": 2048, "right": 0.0, "hit_cap": 1.0, "seconds": 217}
+{"tag": "practice-aha-x1000", "patch": "out/aha-x1000.patch.pt", "split": "train", "n": 128, "cap": 2048, "right": 0.0, "hit_cap": 1.0, "seconds": 217}
+{"tag": "test-aha-x10", "patch": "out/aha-x10.patch.pt", "split": "test", "n": 200, "cap": 2048, "right": 0.03, "hit_cap": 0.97, "seconds": 354}

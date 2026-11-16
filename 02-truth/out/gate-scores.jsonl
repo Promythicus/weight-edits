@@ -1,0 +1,15 @@
+{"variant": "always", "beta": 1, "split": "train", "n": 128, "cap": 2048, "right": 0.3438, "hit_cap": 0.5859, "mean_tokens": 1699, "seconds": 218}
+{"variant": "truth", "beta": 1, "split": "train", "n": 128, "cap": 2048, "right": 0.0781, "hit_cap": 0.5312, "mean_tokens": 1274, "seconds": 216}
+{"variant": "lie", "beta": 1, "split": "train", "n": 128, "cap": 2048, "right": 0.0859, "hit_cap": 0.9141, "mean_tokens": 1989, "seconds": 216}
+{"variant": "always", "beta": 3, "split": "train", "n": 128, "cap": 2048, "right": 0.0547, "hit_cap": 0.0, "mean_tokens": 593, "seconds": 91}
+{"variant": "truth", "beta": 3, "split": "train", "n": 128, "cap": 2048, "right": 0.0078, "hit_cap": 0.9766, "mean_tokens": 1111, "seconds": 217}
+{"variant": "lie", "beta": 3, "split": "train", "n": 128, "cap": 2048, "right": 0.1562, "hit_cap": 0.2422, "mean_tokens": 937, "seconds": 218}
+{"variant": "always", "beta": 10, "split": "train", "n": 128, "cap": 2048, "right": 0.0156, "hit_cap": 0.9688, "mean_tokens": 196, "seconds": 125}
+{"variant": "truth", "beta": 10, "split": "train", "n": 128, "cap": 2048, "right": 0.0, "hit_cap": 0.9609, "mean_tokens": 325, "seconds": 217}
+{"variant": "lie", "beta": 10, "split": "train", "n": 128, "cap": 2048, "right": 0.1094, "hit_cap": 0.5391, "mean_tokens": 440, "seconds": 146}
+{"variant": "always", "beta": 1, "split": "test", "n": 200, "cap": 2048, "right": 0.295, "hit_cap": 0.59, "mean_tokens": 1653, "seconds": 353}
+{"variant": "truth", "beta": 1, "split": "test", "n": 200, "cap": 2048, "right": 0.05, "hit_cap": 0.6, "mean_tokens": 1346, "seconds": 353}
+{"variant": "lie", "beta": 1, "split": "test", "n": 200, "cap": 2048, "right": 0.095, "hit_cap": 0.885, "mean_tokens": 1949, "seconds": 353}
+{"variant": "truthfull", "beta": 1, "split": "test", "n": 200, "cap": 2048, "right": 0.04, "hit_cap": 0.735, "mean_tokens": 1343, "seconds": 354}
+{"variant": "gaslight", "beta": 1, "split": "test", "n": 200, "cap": 2048, "right": 0.015, "hit_cap": 0.97, "mean_tokens": 2020, "seconds": 353}
+{"variant": "random", "beta": 1, "split": "test", "n": 200, "cap": 2048, "right": 0.21, "hit_cap": 0.55, "mean_tokens": 1586, "seconds": 353}

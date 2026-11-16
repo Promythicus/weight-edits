@@ -1,0 +1,15 @@
+{"tag": "dev-base", "split": "train", "n": 64, "patch": null, "cap": 4096, "right": 0.172, "hit_cap": 0.812, "mean_tokens": 3783, "seconds": 275}
+{"tag": "dev-published", "split": "train", "n": 64, "patch": "out/published.patch.pt", "cap": 4096, "right": 0.266, "hit_cap": 0.719, "mean_tokens": 3446, "seconds": 275}
+{"tag": "dev-ours-k3", "split": "train", "n": 64, "patch": "out/ours-k3.patch.pt", "cap": 4096, "right": 0.234, "hit_cap": 0.75, "mean_tokens": 3637, "seconds": 275}
+{"tag": "dev-ours-k6", "split": "train", "n": 64, "patch": "out/ours-k6.patch.pt", "cap": 4096, "right": 0.312, "hit_cap": 0.672, "mean_tokens": 3497, "seconds": 276}
+{"tag": "dev-random-k6", "split": "train", "n": 64, "patch": "out/random-k6.patch.pt", "cap": 4096, "right": 0.172, "hit_cap": 0.828, "mean_tokens": 3768, "seconds": 276}
+{"tag": "test-base", "split": "test", "n": 100, "patch": null, "cap": 4096, "right": 0.09, "hit_cap": 0.91, "mean_tokens": 3928, "seconds": 469}
+{"tag": "test-published", "split": "test", "n": 100, "patch": "out/published.patch.pt", "cap": 4096, "right": 0.25, "hit_cap": 0.71, "mean_tokens": 3531, "seconds": 469}
+{"tag": "test-ours", "split": "test", "n": 100, "patch": "out/ours-k6.patch.pt", "cap": 4096, "right": 0.26, "hit_cap": 0.73, "mean_tokens": 3593, "seconds": 469}
+{"tag": "test-random", "split": "test", "n": 100, "patch": "out/random-k6.patch.pt", "cap": 4096, "right": 0.14, "hit_cap": 0.86, "mean_tokens": 3808, "seconds": 468}
+{"tag": "dev-ours-k-3", "split": "train", "n": 64, "patch": "out/ours-k-3.patch.pt", "cap": 4096, "right": 0.156, "hit_cap": 0.844, "mean_tokens": 3736, "seconds": 275}
+{"tag": "dev-ours-k12", "split": "train", "n": 64, "patch": "out/ours-k12.patch.pt", "cap": 4096, "right": 0.453, "hit_cap": 0.531, "mean_tokens": 3104, "seconds": 275}
+{"tag": "dev-ours-k24", "split": "train", "n": 64, "patch": "out/ours-k24.patch.pt", "cap": 4096, "right": 0.438, "hit_cap": 0.328, "mean_tokens": 2870, "seconds": 275}
+{"tag": "dev-ours-k48", "split": "train", "n": 64, "patch": "out/ours-k48.patch.pt", "cap": 4096, "right": 0.062, "hit_cap": 0.859, "mean_tokens": 732, "seconds": 163}
+{"tag": "test-ours-k12", "split": "test", "n": 100, "patch": "out/ours-k12.patch.pt", "cap": 4096, "right": 0.39, "hit_cap": 0.53, "mean_tokens": 3350, "seconds": 469}
+{"tag": "test-ours-k24", "split": "test", "n": 100, "patch": "out/ours-k24.patch.pt", "cap": 4096, "right": 0.18, "hit_cap": 0.3, "mean_tokens": 2585, "seconds": 453}

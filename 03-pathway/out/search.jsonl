@@ -1,0 +1,18 @@
+{"spec": "", "split": "train", "n": 128, "cap": 2048, "right": 0.0312, "hit_cap": 0.9688, "mean_tokens": 2020, "seconds": 218, "step": "base"}
+{"spec": "15:12,19:12", "split": "train", "n": 128, "cap": 2048, "right": 0.1641, "hit_cap": 0.8047, "mean_tokens": 1910, "seconds": 218, "step": "start"}
+{"spec": "15:12,17:12,19:12", "split": "train", "n": 128, "cap": 2048, "right": 0.1484, "hit_cap": 0.8281, "mean_tokens": 1940, "seconds": 218, "step": "add 17"}
+{"spec": "13:12,15:12,19:12", "split": "train", "n": 128, "cap": 2048, "right": 0.1484, "hit_cap": 0.8594, "mean_tokens": 1967, "seconds": 218, "step": "add 13"}
+{"spec": "15:12,19:12,21:12", "split": "train", "n": 128, "cap": 2048, "right": 0.0547, "hit_cap": 0.9375, "mean_tokens": 2012, "seconds": 218, "step": "add 21"}
+{"spec": "11:12,15:12,19:12", "split": "train", "n": 128, "cap": 2048, "right": 0.0234, "hit_cap": 0.9688, "mean_tokens": 2027, "seconds": 218, "step": "add 11"}
+{"spec": "15:12,16:12,19:12", "split": "train", "n": 128, "cap": 2048, "right": 0.0859, "hit_cap": 0.8906, "mean_tokens": 1986, "seconds": 218, "step": "add 16"}
+{"spec": "15:12,18:12,19:12", "split": "train", "n": 128, "cap": 2048, "right": 0.1484, "hit_cap": 0.8047, "mean_tokens": 1902, "seconds": 218, "step": "add 18"}
+{"spec": "14:12,15:12,19:12", "split": "train", "n": 128, "cap": 2048, "right": 0.0312, "hit_cap": 0.9531, "mean_tokens": 2038, "seconds": 218, "step": "add 14"}
+{"spec": "15:12,19:12,20:12", "split": "train", "n": 128, "cap": 2048, "right": 0.1016, "hit_cap": 0.8594, "mean_tokens": 1929, "seconds": 217, "step": "add 20"}
+{"spec": "15:12,19:12,22:12", "split": "train", "n": 128, "cap": 2048, "right": 0.0391, "hit_cap": 0.9609, "mean_tokens": 2011, "seconds": 216, "step": "add 22"}
+{"spec": "12:12,15:12,19:12", "split": "train", "n": 128, "cap": 2048, "right": 0.1172, "hit_cap": 0.8828, "mean_tokens": 1982, "seconds": 217, "step": "add 12"}
+{"spec": "9:12,15:12,19:12", "split": "train", "n": 128, "cap": 2048, "right": 0.0391, "hit_cap": 0.9609, "mean_tokens": 2035, "seconds": 218, "step": "add 9"}
+{"spec": "15:6,19:12", "split": "train", "n": 128, "cap": 2048, "right": 0.1641, "hit_cap": 0.8203, "mean_tokens": 1912, "seconds": 218, "step": "strength 15"}
+{"spec": "15:24,19:12", "split": "train", "n": 128, "cap": 2048, "right": 0.0859, "hit_cap": 0.8203, "mean_tokens": 1921, "seconds": 218, "step": "strength 15"}
+{"spec": "15:12,19:6", "split": "train", "n": 128, "cap": 2048, "right": 0.1016, "hit_cap": 0.8828, "mean_tokens": 1968, "seconds": 218, "step": "strength 19"}
+{"spec": "15:12,19:24", "split": "train", "n": 128, "cap": 2048, "right": 0.3203, "hit_cap": 0.6484, "mean_tokens": 1786, "seconds": 218, "step": "strength 19"}
+{"spec": "19:24", "split": "train", "n": 128, "cap": 2048, "right": 0.3203, "hit_cap": 0.5859, "mean_tokens": 1748, "seconds": 218, "step": "drop 15"}

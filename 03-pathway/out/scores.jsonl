@@ -1,0 +1,4 @@
+{"spec": "", "split": "test", "n": 200, "cap": 2048, "right": 0.075, "hit_cap": 0.92, "mean_tokens": 1972, "seconds": 352, "tag": "test-base"}
+{"spec": "15:6,19:6", "split": "test", "n": 200, "cap": 2048, "right": 0.11, "hit_cap": 0.885, "mean_tokens": 1962, "seconds": 354, "tag": "test-two-k6"}
+{"spec": "15:12,19:12", "split": "test", "n": 200, "cap": 2048, "right": 0.19, "hit_cap": 0.805, "mean_tokens": 1892, "seconds": 353, "tag": "test-two-k12"}
+{"spec": "19:24", "split": "test", "n": 200, "cap": 2048, "right": 0.245, "hit_cap": 0.68, "mean_tokens": 1762, "seconds": 353, "tag": "test-pathway"}

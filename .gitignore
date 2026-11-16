@@ -1,0 +1,9 @@
+data/
+models/
+leads/
+__pycache__/
+*.pt
+*.npz
+*.f32
+*.gguf
+*.log
