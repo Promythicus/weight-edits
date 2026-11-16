@@ -72,6 +72,11 @@ jump from 7.5% to 24.5% is not. The two tables use different limits and problems
 - Datasets and models are not in this repository; the write-up says where they come from.
 - Large raw outputs (model states, patches) are left out; the scripts regenerate them.
 
+## Licence
+
+Code and write-ups: Apache-2.0, copyright 2026 Promythicus Tech Inc. Result files that quote dataset text keep the
+dataset's licence (CUAD: CC BY 4.0, The Atticus Project).
+
 One run of each, our own scoring: these numbers cannot be set beside published benchmarks. Corrections are welcome:
 root@promythicus.com. More experiments: [github.com/Promythicus](https://github.com/Promythicus) ·
 [promythicus.com/blog](https://promythicus.com/blog/)
