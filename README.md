@@ -16,7 +16,7 @@ in `SOURCES.md`.
 
 ## Results
 
-The repair (`01-loop-repair/`): 100 unseen problems, thinking cut at 4,096 tokens.
+The repair (`loop-repair/`): 100 unseen problems, thinking cut at 4,096 tokens.
 
 | Model | Right |
 | ----- | ----- |
@@ -34,13 +34,13 @@ The other ideas: 200 other unseen problems, cut at 2,048 tokens (so every number
 | Edit | Right | Folder |
 | ---- | ----- | ------ |
 | Untouched | 7.5% | |
-| Two layers, strength 12 | 19.0% | `03-pathway/` |
-| One layer, strength 24 (what a greedy search over layers and strengths settled on) | **24.5%** | `03-pathway/` |
-| Plain push at layer 10 | 29.5% | `02-truth/` |
-| The same push, gated by a random direction | 21.0% | `02-truth/` |
-| The same push, only when a readout says the answer in mind is right | 5.0% | `02-truth/` |
-| The mirror image (push only when it says wrong); a lab control | 9.5% | `02-truth/` |
-| The AHA recipe as we understood it from its description | 7.0% | `07-aha/` |
+| Two layers, strength 12 | 19.0% | `pathway/` |
+| One layer, strength 24 (what a greedy search over layers and strengths settled on) | **24.5%** | `pathway/` |
+| Plain push at layer 10 | 29.5% | `truth/` |
+| The same push, gated by a random direction | 21.0% | `truth/` |
+| The same push, only when a readout says the answer in mind is right | 5.0% | `truth/` |
+| The mirror image (push only when it says wrong); a lab control | 9.5% | `truth/` |
+| The AHA recipe as we understood it from its description | 7.0% | `aha/` |
 
 - "The answer in mind is right" is readable inside the model (AUC 0.71 on problems the readout was not made from), but
   two hand-written neurons acting on it did worse than a gate that reads nothing.

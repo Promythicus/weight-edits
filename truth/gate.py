@@ -2,7 +2,7 @@
 """Truth maxing and its mirror: two neurons written by hand that read "the answer in mind is right" and act on doubt.
     python gate.py build                 pick the layer, fit the readout at the MLP's own input, write every variant
                                          at every strength                                  -> out/gate.json, out/gate-<variant>-b<beta>.patch.pt
-    python gate.py score <variant> <beta> <split> <n>     same problems, seed and 2,048-token cut as experiment 03 -> out/gate-scores.jsonl
+    python gate.py score <variant> <beta> <split> <n>     same problems, seed and 2,048-token cut as the pathway experiment -> out/gate-scores.jsonl
     python gate.py pick                  prints the strength at which `always` scored best on practice
 
 How the neurons are written (Qwen's MLP neuron is  silu(g.x) * (u.x), then its output column; there are no biases):
@@ -10,7 +10,7 @@ How the neurons are written (Qwen's MLP neuron is  silu(g.x) * (u.x), then its o
                     right and where it was wrong (traces.py), fitted here at the input of the layer's MLP
   g = c (w - theta m/|m|^2)     m is the mean input, so g.x is about c (s - theta): positive when the sign says "right"
   u = a m/|m|^2                 about a constant; a is set so the neuron's mean activation on the practice points is 1
-  output column = -/+ beta * gap * v      v is experiment 01's "stuck minus working" direction at that layer and gap the
+  output column = -/+ beta * gap * v      v is the loop-repair experiment's "stuck minus working" direction at that layer and gap the
                     distance between the stuck and the working mean along it: beta 1 = one such gap per unit of activation
 Neuron A fires when the sign says right, neuron B (g negated) when it says wrong. They replace the two least used
 neurons of the layer. Variants, all with the same mean push:
@@ -63,7 +63,7 @@ def build():
             sc[fold == k] = (X[L][fold == k] @ lda(X[L][fold != k], Y[fold != k])).float()
         rep["auc_at_mlp_input"][L] = round(traces.auc(sc, Y), 3)
     L = max(CAND, key=lambda l: rep["auc_at_mlp_input"][l]); rep["layer"] = L; A = X[L]; m = A.mean(0); one = m / (m @ m)
-    F = torch.load(os.path.join(H, "..", "01-loop-repair", "out", "found.pt")); v = F["v"][L].double(); size = float(F["res_norm"][L])     # size: the stuck-working gap
+    F = torch.load(os.path.join(H, "..", "loop-repair", "out", "found.pt")); v = F["v"][L].double(); size = float(F["res_norm"][L])     # size: the stuck-working gap
     mlp = model.model.layers[L].mlp; Wg, Wu, Wd = (getattr(mlp, n).weight.detach().double().cpu() for n in ("gate_proj", "up_proj", "down_proj"))
     use = (silu(A @ Wg.T) * (A @ Wu.T)).abs().mean(0) * Wd.norm(dim=0); na, nb = use.argsort()[:2].tolist()       # the two least used neurons
     rep.update(neurons=[na, nb], gap=round(size, 3), least_use=[round(float(use[na]), 5), round(float(use[nb]), 5)], median_use=round(float(use.median()), 5))

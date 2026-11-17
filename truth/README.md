@@ -1,4 +1,4 @@
-# 02 Truth: is "the answer in mind is right" readable, and can doubt be cut only then?
+# Truth: is "the answer in mind is right" readable, and can doubt be cut only then?
 
 **Question.** The small model (Qwen3.5-0.8B) thinks past correct answers. Does it carry a readable sign that the
 answer it currently has in mind is right? If so, can two hand-written neurons use that sign to push it out of
@@ -9,7 +9,7 @@ answer it currently has in mind is right? If so, can two hand-written neurons us
   labelled right or wrong. A direction is fitted (mean difference, spread-corrected) and scored on problems it was
   not made from.
 - Gate (`gate.py`, `run3.sh`): at layer 10, the two least used MLP neurons are overwritten by hand. One fires when
-  the readout says "right", the other when it says "wrong"; each pushes along experiment 01's stuck direction.
+  the readout says "right", the other when it says "wrong"; each pushes along the loop-repair experiment's stuck direction.
   Six variants with the same mean push: `always` (no gate), `truth`, `lie`, `truthfull`, `gaslight`, `random` (a
   gate reading a random direction). Strength chosen where `always` scored best on 128 practice problems, then all six
   scored once on 200 held-out problems (GSM8K test, seed 2, cut at 2,048 tokens).
@@ -22,7 +22,7 @@ answer it currently has in mind is right? If so, can two hand-written neurons us
 
 | Variant (strength 1) | Held out, right | Still thinking at the cut |
 | -------------------- | --------------- | ------------------------- |
-| none (from experiment 03) | 7.5% | 92% |
+| none (from the pathway experiment) | 7.5% | 92% |
 | always: push with no gate | 29.5% | 59% |
 | random: gate reading a random direction | 21.0% | 55% |
 | lie: push only when the sign says wrong | 9.5% | 88.5% |
@@ -30,7 +30,7 @@ answer it currently has in mind is right? If so, can two hand-written neurons us
 | truthfull: push when right, pull back when wrong | 4.0% | 73.5% |
 | gaslight: pull back when right, push when wrong | 1.5% | 97% |
 
-- The plain push works at layer 10 too (29.5%), as well as experiment 03's best edit at layer 19 (24.5%).
+- The plain push works at layer 10 too (29.5%), as well as the pathway experiment's best edit at layer 19 (24.5%).
 - The gate does not help. `truth` is below `random` and below `lie`. The hypothesis is not supported by this build.
 - `gaslight` breaks the model, as a mirror should, but so does `truth` nearly; the readout is not what separates them.
 - Stronger pushes fail on practice: `always` 34.4% at strength 1, 5.5% at 3, 1.6% at 10.

@@ -1,4 +1,4 @@
-# 01. The published loop repair, read and redone
+# The published loop repair, read and redone
 
 2026-11-16. Model: Qwen3.5-0.8B (thinking on, model-card sampling: temperature 0.6, top-p 0.95, top-k 20,
 presence penalty 1.5). Problems: GSM8K. Answers are cut at 4,096 tokens (the paper allowed 32,768, so
@@ -23,7 +23,7 @@ output weight along `v`). The MLPs that push most toward "stuck" are layers 15 a
 Against the published edit: direction cosine 0.70 in both layers; 39 and 22 of our top 64 neurons are among
 theirs. Patch: `python find.py patch <tag> 15,19 64 <k>`.
 
-## Results (`run.py`, `run2.sh`, `run3.sh`, `../02-truth/run2.sh` -> `out/scores.jsonl`)
+## Results (`run.py`, `run2.sh`, `run3.sh`, `../truth/run2.sh` -> `out/scores.jsonl`)
 
 Practice = 64 problems of the train split (seed 0). Held out = 100 problems of the test split (seed 0),
 run once the strength was frozen on practice.
@@ -46,7 +46,7 @@ finishes its thinking but answers wrong, and the practice score (64 problems) di
 
 **Limits.** 100 held-out problems, one sample each: a few points either way is noise. The 4,096-token cut
 favours edits that shorten thinking. k=12 and k=24 were scored on the held-out set after k=6 had been (the
-held-out set was used twice). Baseline that is not an edit, from experiment 02: stopping the unedited
+held-out set was used twice). Baseline that is not an edit, from the truth experiment: stopping the unedited
 model's thinking at 400 tokens and making it answer gives 38% on 300 practice problems.
 
 ## Examples (unedited model, cut at 4,096 tokens; published edit; `out/dev-base.jsonl`, `out/dev-published.jsonl`)

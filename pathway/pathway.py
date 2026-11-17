@@ -4,7 +4,7 @@ chosen by systematic testing (forward passes only, no gradients).
     python pathway.py search      greedy: start from the best two-layer edit, try adding each other layer's cluster,
                                   keep what helps, then re-tune each kept layer's strength   -> out/search.jsonl, out/pathway.patch.pt
     python pathway.py score <spec> <split> <n> <tag>      spec like 15:12,19:12,17:6      -> out/scores.jsonl
-Directions and neuron scores come from experiment 01 (out/found.pt: per layer, the "stuck minus working" direction
+Directions and neuron scores come from the loop-repair experiment (out/found.pt: per layer, the "stuck minus working" direction
 and each MLP neuron's push along it). A cluster = the 64 neurons of a layer that push most toward "stuck".
 Edit per neuron:  w <- w - k (w.v) v.
 Practice score = share of 128 practice problems answered right within 2,048 tokens (same problems and seed for every
@@ -12,7 +12,7 @@ setting, so settings are compared like for like)."""
 import json, os, sys, time, torch
 H = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, os.path.join(H, ".."))
 import lib
-OUT = os.path.join(H, "out"); F = torch.load(os.path.join(H, "..", "01-loop-repair", "out", "found.pt"))
+OUT = os.path.join(H, "out"); F = torch.load(os.path.join(H, "..", "loop-repair", "out", "found.pt"))
 PER, N, CAP, SEED = 64, 128, 2048, 2
 tok, model = lib.load(); BASE = {L: model.model.layers[L].mlp.down_proj.weight.detach().clone() for L in range(len(model.model.layers))}
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Score a patch file like experiment 03 does (same problems, seed, 2,048-token cut):  python score.py <patch|none> <split> <n> <tag>"""
+"""Score a patch file like the pathway experiment does (same problems, seed, 2,048-token cut):  python score.py <patch|none> <split> <n> <tag>"""
 import json, os, sys, time
 H = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, os.path.join(H, ".."))
 import lib

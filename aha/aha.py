@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """AHA! (Khamis, Tutunov, Bou Ammar, 15 Nov 2026) redone here on Qwen3.5-0.8B: the loop repair with nothing but the
 model's own outputs, a linear program and a weight write.
-    python aha.py pairs     from experiment 02's thinking traces: find where a trace starts to loop, back up 8 tokens,
+    python aha.py pairs     from the truth experiment's thinking traces: find where a trace starts to loop, back up 8 tokens,
                             sample 8 continuations, pair the earliest-looping with the longest productive   -> out/pairs.pt
     python aha.py solve     per layer: direction u (looping minus productive, mean over pairs) and a sparse v from a
                             linear program (min |v|_1; v.h <= -delta on looping tokens, |v.h| <= 1 on productive ones);
@@ -12,7 +12,7 @@ import json, os, sys, torch
 import numpy as np
 H = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, os.path.join(H, ".."))
 import lib
-OUT = os.path.join(H, "out"); TR = os.path.join(H, "..", "02-truth", "out", "traces.jsonl")
+OUT = os.path.join(H, "out"); TR = os.path.join(H, "..", "truth", "out", "traces.jsonl")
 
 
 def onset(ids, n=24, back=600):
@@ -83,7 +83,7 @@ def solve(per=2):
         u, v = sol[l]; cols = v.nonzero().flatten()
         patch[f"layers.{l}.mlp.down_proj.weight"] = {"columns": cols, "added": torch.outer(u, v[cols]), "direction_removed": u}
     torch.save(patch, os.path.join(OUT, "aha.patch.pt"))
-    for name, layers in (("aha-15-19", [15, 19]),):                                                                 # the same recipe on the layers experiment 01 found
+    for name, layers in (("aha-15-19", [15, 19]),):                                                                 # the same recipe on the layers the loop-repair experiment found
         if all(l in sol for l in layers):
             torch.save({f"layers.{l}.mlp.down_proj.weight": {"columns": sol[l][1].nonzero().flatten(), "added": torch.outer(sol[l][0], sol[l][1][sol[l][1].nonzero().flatten()]), "direction_removed": sol[l][0]} for l in layers}, os.path.join(OUT, name + ".patch.pt"))
     json.dump(rep, open(os.path.join(OUT, "solve.json"), "w"), indent=1); print("chosen", top)
