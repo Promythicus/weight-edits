@@ -1,6 +1,6 @@
 # Repairing a model by editing its weights, and three ideas that failed
 
-**Promythicus research. Author: Bardia Shahrestani.** Write-up for a general reader: [promythicus.com/blog/editing-ai-model-weights-instead-of-fine-tuning/](https://promythicus.com/blog/editing-ai-model-weights-instead-of-fine-tuning/)
+**Promythicus research.** Write-up for a general reader: [promythicus.com/blog/editing-ai-model-weights-instead-of-fine-tuning/](https://promythicus.com/blog/editing-ai-model-weights-instead-of-fine-tuning/)
 
 <a href="https://promythicus.com/blog/editing-ai-model-weights-instead-of-fine-tuning/"><img src="publish/infographic.png" alt="Summary of the results" width="540"></a>
 
@@ -74,9 +74,11 @@ jump from 7.5% to 24.5% is not. The two tables use different limits and problems
 
 ## Licence
 
-Code and write-ups: Apache-2.0, copyright 2026 Promythicus Tech Inc. Author: Bardia Shahrestani. Result files that quote dataset text keep the
+Code and write-ups: Apache-2.0, copyright 2026 Promythicus Tech Inc. Result files that quote dataset text keep the
 dataset's licence (CUAD: CC BY 4.0, The Atticus Project).
 
 One run of each, our own scoring: these numbers cannot be set beside published benchmarks. Corrections are welcome:
 root@promythicus.com. More experiments: [github.com/Promythicus](https://github.com/Promythicus) ·
 [promythicus.com/blog](https://promythicus.com/blog/)
+
+<sub>Author: Bardia Shahrestani</sub>
